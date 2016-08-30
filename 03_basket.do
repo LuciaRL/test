@@ -20,7 +20,7 @@
 
 	use $path/output/data_all_clean.dta
 		
-	keep if t<tm(2016, 7) | Notes!="" // DATE TO BE CHANGED FOR NEXT UPDATE. 
+	keep if t<tm(2016, 12) | Notes!="" // DATE TO BE CHANGED FOR NEXT UPDATE. 
 									  // The drop is needed because only few prices have been uploaded, thus the minum calorie for the bood basked will be too low
 	
 	gen price_g=price/1000
